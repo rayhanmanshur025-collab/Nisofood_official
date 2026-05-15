@@ -716,3 +716,49 @@ footer {
     }
     
 }
+/* Galeri Dokumentasi */
+.dokumentasi-box {
+    background: white;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 30px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dokumentasi-box h3 {
+    color: #c0392b;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.galeri-item {
+    text-align: center;
+    background: #fef8ed;
+    border-radius: 20px;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.galeri-item:hover {
+    transform: translateY(-5px);
+}
+
+.galeri-item img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.galeri-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #c0392b;
+}
