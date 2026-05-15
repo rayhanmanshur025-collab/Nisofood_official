@@ -49,18 +49,18 @@ function kirimWA(pesan) {
 
 // ========== RESELLER ==========
 function pesanReseller(nama, harga) {
-    let pilihan = prompt("RESELLER\nProduk: " + nama + "\nHarga: Rp " + harga + "\n\n1. 25 pcs\n2. 50 pcs\n3. 75 pcs\n4. 100 pcs\n5. Custom");
+    let pilihan = prompt("RESELLER\nProduk: " + nama + "\nHarga: Rp " + harga + "\n\n1. 30 pcs\n2. 60 pcs\n3. 90 pcs\n4. 120 pcs\n5. Custom");
     if (!pilihan) return;
     let jml = 0;
-    if (pilihan === "1") jml = 25;
-    else if (pilihan === "2") jml = 50;
-    else if (pilihan === "3") jml = 75;
-    else if (pilihan === "4") jml = 100;
+    if (pilihan === "1") jml = 30;
+    else if (pilihan === "2") jml = 60;
+    else if (pilihan === "3") jml = 90;
+    else if (pilihan === "4") jml = 120;
     else if (pilihan === "5") {
         let c = prompt("Jumlah pcs:");
         if (!c) return;
         jml = parseInt(c);
-        if (jml < 25) { alert("Min 25 pcs"); return; }
+        if (jml < 30) { alert("Min 30 pcs"); return; }
     } else { alert("Pilihan salah"); return; }
     let total = harga * jml;
     kirimWA("ORDER RESELLER\nProduk: " + nama + "\nJumlah: " + jml + " pcs\nTotal: Rp " + total);
